@@ -1,0 +1,10 @@
+micronaut:
+    application:
+        name: employee-service
+    config-client:
+        enabled: true
+consul:
+    client:
+        defaultZone: "${CONSUL_HOST:192.168.1.70}:${CONSUL_PORT:8500}"
+        config:
+            format: YAML
